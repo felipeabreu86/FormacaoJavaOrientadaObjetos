@@ -20,5 +20,7 @@ public class TesteEscreverArquivo {
 		bw.write("Lorem ipsum dolor sit amet");
 
 		bw.close();
+		
+		System.out.println("Arquivo lorem2.txt criado.");
 	}
 }
