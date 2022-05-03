@@ -12,7 +12,6 @@ public class TesteLerArquivoCSV {
 
 		while (scanner.hasNextLine()) {
 			String linha = scanner.nextLine();
-			System.out.println(linha);
 
 //			String[] valores = linha.split(",");
 //			System.out.println(Arrays.toString(valores));
@@ -26,6 +25,9 @@ public class TesteLerArquivoCSV {
 			int numeroConta = linhaScanner.nextInt();
 			String nomeTitular = linhaScanner.next();
 			double saldoConta = linhaScanner.nextDouble();
+
+			System.out.format(new Locale("pt", "BR"), "%s, %04d, %04d, %15s, %.2f%n", tipoConta, agencia, numeroConta,
+					nomeTitular, saldoConta);
 
 			linhaScanner.close();
 		}
