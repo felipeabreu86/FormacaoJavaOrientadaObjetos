@@ -2,13 +2,17 @@ package br.com.alura.java.io.teste;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.Locale;
 import java.util.Scanner;
 
 public class TesteLerArquivoCSV {
 
 	public static void main(String[] args) throws IOException {
-		Scanner scanner = new Scanner(new File("contas.csv"));
+		// Scanner scanner = new Scanner(new File("contas.csv"));
+
+		// Se desejar utilizar um Charset específico para o arquivo
+		//Scanner scanner = new Scanner(new File("contas.csv"), StandardCharsets.UTF_8.name());
 
 		while (scanner.hasNextLine()) {
 			String linha = scanner.nextLine();
